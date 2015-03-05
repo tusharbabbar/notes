@@ -1,0 +1,29 @@
+For Ubuntu
+resources : https://thinkster.io/learn-to-build-realtime-webapps/
+Step 1:
+    - installing nodejs and npm
+        resources : for nodejs -- https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
+                    for npm -- https://www.npmjs.com/package/npm
+        installing npm
+            * curl -L https://npmjs.org/install.sh | sh (Run as root -- sudo su)
+        installing node js                
+            * curl -sL https://deb.nodesource.com/setup | sudo bash - (Run as root -- sudo su)
+            * sudo apt-get install -y nodejs
+
+Step 2:
+    - setting up environment for angularjs
+        required tools for faster development and testing in angular:
+            * yoeman generator for angular js
+            * gruntjs for automatic build testing
+            * bower for managing packages
+
+        installing yoeman, grunt and bower
+            * npm install -g yo
+            * npm install -g generator-angular
+            * npm install -g bower grunt
+            (-g signifies global scope)
+
+Step 3:
+    - creating your app
+        * mkdir myApp && cd myApp
+        * yo angular
